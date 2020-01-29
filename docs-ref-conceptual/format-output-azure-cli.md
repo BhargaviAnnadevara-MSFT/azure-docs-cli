@@ -177,7 +177,7 @@ az vm list --out tsv --query '[].[id, location, resourceGroup, name]'
 The next example shows how `tsv` output can be piped to other commands in bash. The query is used to filter output and force ordering, `grep` selects items that have text "RGD" in them, then the `cut`
 command selects the fourth field to show the name of the VM in output.
 
-```bash
+```azurecli-interactive
 az vm list --out tsv --query '[].[id, location, resourceGroup, name]' | grep RGD | cut -f4
 ```
 
