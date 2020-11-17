@@ -31,7 +31,7 @@ for the Azure CLI. This package has been tested with RHEL 7.7, RHEL 8, Fedora 24
 2. Create local `azure-cli` repository information.
 
    ```bash
-   sudo sh -c 'echo -e "[azure-cli]
+   sudo sh -c 'echo "[azure-cli]
    name=Azure CLI
    baseurl=https://packages.microsoft.com/yumrepos/azure-cli
    enabled=1
